@@ -18,10 +18,14 @@ public class PrStu {
 		double maxPossiblemarks = totalSubject*100;
 		double percentage= (totalMarks/maxPossiblemarks)*100;
 
-		System.out.println("\n ----RESULT----");
+		System.out.println("\n ----RESULT OF STUDENT----");
    		System.out.println("Marks obthained" + totalMarks + "out of 600");
 		System.out.println("calculated Percentage=" + percentage);
 		
+			if(percentage>=50){
+					System.out.println("YEHHHHHH!!!!!! PAPPU PASS HO GAYAA");
+				}
+
 	 sc.close();
     }
 
