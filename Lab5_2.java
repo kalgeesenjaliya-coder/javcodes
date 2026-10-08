@@ -2,27 +2,24 @@ import java.util.Scanner;
 
 public class Lab5_2 {
 
-    static void checkNumber(int number) {
-
-        if (number % 2 != 0) {
-            throw new NumberFormatException("Number is odd.");
+    static void checkNumber(int num) {
+        if (num % 2 != 0) {
+            throw new NumberFormatException("Number is odd");
         }
 
-        System.out.println("Number is even.");
+        System.out.println("Number is even");
     }
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        int number = sc.nextInt();
+        System.out.print("Enter an integer: ");
+        int num = sc.nextInt();
 
         try {
-            checkNumber(number);
-        }
-        catch (NumberFormatException e) {
-            System.out.println("NumberFormatException: " + e.getMessage());
+            checkNumber(num);
+        } catch (NumberFormatException e) {
+            System.out.println("Exception: " + e.getMessage());
         }
 
         sc.close();
